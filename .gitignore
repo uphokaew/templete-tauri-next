@@ -2,7 +2,9 @@
 logs
 *.log
 .next/*
+.next
 .vscode/*
+.vscode
 
 npm-debug.log*
 yarn-debug.log*
