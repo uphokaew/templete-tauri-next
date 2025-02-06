@@ -10,7 +10,7 @@ const withNextIntl = createNextIntlPlugin('./libs/i18n/request.ts');
 
 const nextConfig: NextConfig = {
 	output: 'export',
-	distDir: '../',
+	distDir: '../.next',
 	// Note: This feature is required to use the Next.js Image component in SSG mode.
 	// See https://nextjs.org/docs/messages/export-image-api for different workarounds.
 	images: {
