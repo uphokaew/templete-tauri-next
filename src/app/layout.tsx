@@ -5,7 +5,6 @@ import { LocaleContextProvider } from '@/extensions/locale-provider/localeProvid
 export const metadata: Metadata = {
     title: 'name',
     description: 'name',
-    icons: '/favicon.ico',
 };
 
 interface RootLayoutProps {

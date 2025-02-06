@@ -1,16 +1,14 @@
+
 services:
-    next-app:
-        build: .
-        container_name: nextjs_app
-        ports:
-            - '3000:3000'
-        environment:
-            - NODE_ENV=production
-        env_file:
-            - .env
-        healthcheck:
-            test: ['CMD', 'curl', '-f', 'http://localhost:3000']
-            interval: 30s
-            timeout: 10s
-            retries: 5
-        command: npm start
+  app:
+    build: .
+    container_name: my-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: ["npm", "run", "next:start"]

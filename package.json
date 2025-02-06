@@ -3,9 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "tauri:dev": "next dev src",
-        "tauri:build": "next build src",
-        "tauri:start": "next start src",
+        "tauri:dev": "tauri dev",
+        "tauri:build": "tauri build",
         "next:dev": "next dev src",
         "next:build": "next build src",
         "next:start": "next start src",
