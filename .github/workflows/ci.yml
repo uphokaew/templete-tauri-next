@@ -1,0 +1,34 @@
+# name: CI Pipeline with Docker Compose
+
+# on:
+#     push:
+#         branches:
+#             - main
+#             - dev
+
+# jobs:
+#     build-test:
+#         runs-on: ubuntu-latest
+
+#         steps:
+#             - name: Checkout code
+#               uses: actions/checkout@v3
+
+#             - name: Set up Docker
+#               run: docker --version
+
+#             # - name: Install Docker Compose
+#             #   run: |
+#             #     sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+#             #     sudo chmod +x /usr/local/bin/docker-compose
+#             #     docker-compose --version
+
+#             - name: Create .env file
+#               run: |
+#                   echo "TEST_ENV_SECRET=${{ secrets.TEST_ENV_SECRET }}" > .env
+
+#             - name: Build with Docker
+#               run: docker build -t next-app-15 .
+
+#             # - name: Build and Run with Docker Compose
+#             #   run: docker-compose up --build --abort-on-container-exit

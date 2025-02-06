@@ -1,0 +1,21 @@
+{
+    "trailingComma": "all",
+    "semi": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "overrides": [
+        {
+            "files": ["*.js", "*.ts"],
+            "options": {
+                "singleQuote": true
+            }
+        },
+        {
+            "files": ["*.jsx", "*.tsx"],
+            "options": {
+                "jsxSingleQuote": false
+            }
+        }
+    ]
+}
